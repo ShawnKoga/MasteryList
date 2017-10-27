@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A very brief overview of me, Shawn Koga">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Shawn, Koga, Ron, Swanson">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shawn's HTML and CSS Mastery</title>
+</head>
+
+<body>
+    <header>
+        <h1>This is a header</h1>
+    </header>
+
+    <section class="favorites">
+        <p>Here is a list of my favorite things, enjoy!</p>
+        <div>Shawn's Favorite Things</div>
+        <ul>
+            <li>Food</li>
+            <li>Coding -
+                <a href="https://github.com/ShawnKoga" target="blank">Click Here</a> to see more</li>
+            <li>Comics</li>
+            <li>Soccer</li>
+            <li>Basketball</li>
+            <li>Printmaking</li>
+            <li>The Great Outdoors</li>
+            <video loop autoplay src="./assets/Lake - 913.mp4"></video>
+        </ul>
+    </section>
+
+    <article>
+        <p>When I grow up I want to be just like
+            <span>Ron Swanson</span>
+        </p>
+        <img src="./assets/ronswanson.png" alt="ron swanson" />
+        <audio controls>
+            <source src="./assets/Ron Swanson Giggle.mp3" type="audio/mpeg">
+        </audio>
+    </article>
+    <button onclick="alertFunction()">Click Here to run an internal javascript function!</button>
+    <button id="external-script">Click Here to run an external javascript function!</button>
+    <footer>
+        <h3>This is a footer</h3>
+    </footer>
+
+
+    <script>
+        function alertFunction() {
+            alert('Internal script ran!')
+        }
+    </script>
+    <script type="text/javascript" src="myscripts.js"></script>
+
+</body>
+
+</html>
+
+<!-- You can use custom semantic HTML tags (ex. <toys>) in your document, but it is discouraged because at some point those tags may become standardized and not work the way you want them to anymore (it is suggested to make unique names to avoid this ex. my-toys) -->
+<!-- Semantic HTML elements are HTML elements that have been named to clearly define (for both browsers and developers) different parts of a page. I often use <header>, <nav>, and <section> in my projects to break up the code visually and make it slightly easier to read. -->
+<!-- To give content solid structure and value. Using <header>, <section>, <article>, <footer> is much better than a bunch of <div>s.  -->
+<!-- Semantics help to leave content less ambiguous and assist with accessibility by providing more defined information to assistive technologies. -->
+<!-- It is best practice to use semantics to avoid using ids and classes on every tag. Semantic tags vs. a bunch of div tags with ids and classes. It is also better practice to break up information you are giving with semantics. 
+    ex. I am 5 feet and 10 inches
+    /////should be/////
+    <section>
+        My height
+        <dl>
+            <dt>Feet: <dd> <meter min=0 max=7 value=5>5ft</meter>
+            <dt>Inches: <dd> <meter min=0 max=12 value=11>11in</meter>
+        </dl>
+    </section> -->
