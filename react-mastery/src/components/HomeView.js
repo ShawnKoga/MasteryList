@@ -13,6 +13,9 @@ class HomeView extends Component {
         }
         this.toggleMenu = this.toggleMenu.bind(this)
     }
+    componentWillReceiveProps() {
+        this.props.getAllProducts()
+    }
     toggleMenu() {
         this.setState({
             toggle: !this.state.toggle
