@@ -20,6 +20,8 @@ app.post('/products/create', controller.createProduct)
 app.patch('/products/update', controller.updateProduct)
 app.delete('/products/delete/:id', controller.deleteProduct)
 
+app.get('/users/:id', controller.getUserById)
+
 
 var port = 5050;
 app.listen(port, () => {

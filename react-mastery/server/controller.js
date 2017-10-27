@@ -25,5 +25,12 @@ module.exports = {
         dbInstance.products.deleteProduct(req.params.id)
         .then(products => res.status(200).send(products))
         .catch(err => res.status(500).send())
+    },
+
+    getUserById: (req, res) => {
+        const dbInstance = req.app.get('db');
+        dbInstance.users.getUser(req.params.id)
+        .then(user => res.status(200).send(user))
+        .catch(err => res.status(500).send())
     }
 }
