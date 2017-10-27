@@ -21,7 +21,7 @@ class HomeView extends Component {
     render() {
         return (
             <section className="Home-View">
-                THIS IS THE HOME VIEW
+                <h2>THIS IS THE HOME VIEW</h2>
                 <button onClick={() => this.props.getAllProducts()}>GET ALL PRODUCTS</button>
                 <button onClick={() => this.toggleMenu()}>Toggler</button>
                 <ViewFromProps toggleMenu={this.toggleMenu} toggle={this.state.toggle}/>

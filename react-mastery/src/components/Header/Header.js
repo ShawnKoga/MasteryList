@@ -24,16 +24,17 @@ class Header extends Component {
 
     render() {
         const user =  this.state.user.map((c, i) => {
+            const {username} = c
             return (
                 <section key={i}>
-                    <div>{c.username}</div>
+                    <div id="username">{username}</div>
                 </section>
             )
         })
 
         return (
-            <section className="App">
-                The Header
+            <section>
+                <h1>The Header</h1>
                 <div>{user}</div>
             </section>
         );

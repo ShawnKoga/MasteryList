@@ -4,8 +4,13 @@ class ViewForProps extends Component {
     render() {
         return (
             <section className={this.props.toggle ? "Prop-View show" : "hide"}>
-                THIS IS THE PROP THING VIEW
+                <div>THIS IS THE PROP THING VIEW</div>
                 <button onClick={() => this.props.toggleMenu()}>Toggle</button>
+                <ul className="the_pic">
+                    <li>-Mountains</li>
+                    <li>-Snow</li>
+                    <li>-Clouds</li>
+                </ul>
             </section>
         );
     }
