@@ -11,6 +11,11 @@ class ViewForProps extends Component {
                     <li>-Snow</li>
                     <li>-Clouds</li>
                 </ul>
+                <ul className="the_list">
+                    <li>-Mountains</li>
+                    <li>-Snow</li>
+                    <li>-Clouds</li>
+                </ul>
             </section>
         );
     }
